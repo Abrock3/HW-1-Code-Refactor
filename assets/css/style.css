@@ -8,6 +8,7 @@ body {
   background-color: #d9dcd6;
 }
 
+/* changed the selector here to refer to the new header element */
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -16,16 +17,18 @@ header {
   color: #ffffff;
 }
 
+/* changed this selector to refer to the new header element */
 header h1 {
   display: inline-block;
   font-size: 48px;
 }
 
-.seo {
+/* shifted this code up to match the document flow of the HTML doc */
+#seo {
   color: #d9dcd6;
 }
-
-header nav {
+/* changed this selector to refer to the new nav element */
+nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
@@ -33,22 +36,21 @@ header nav {
   font-size: 20px;
 }
 
-header nav ul {
+/* changed this selector to refer to the new nav element */
+nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+/* changed this selector to refer to the new nav element */
+nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
-a {
+/* Added more specificity to this selector to make it less likely to impact future edits */
+nav ul li a {
   color: #ffffff;
   text-decoration: none;
-}
-
-p {
-  font-size: 16px;
 }
 
 .hero {
@@ -60,22 +62,15 @@ p {
   background-position: center;
 }
 
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-.float-right {
-  float: right;
-  margin-left: 25px;
-}
-
+/* changed this selector to refer to the new main element */
 main {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
 }
 
+/* changed this selector to refer to the new main-items class.
+Deleted duplicate code*/
 .main-items {
   margin-bottom: 20px;
   padding: 50px;
@@ -85,15 +80,38 @@ main {
   color: #ffffff;
 }
 
-.main-items img {
-  max-height: 200px;
-}
-
+/* changed this selector to refer to the new main-items class.
+Deleted duplicate code*/
 .main-items h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
+/* changed this selector to refer to the new main-items class.
+Deleted duplicate code*/
+.main-items img {
+  max-height: 200px;
+}
+
+/* moved this lower to match HTML doc flow */
+p {
+  font-size: 16px;
+}
+
+/* moved this lower to match HTML doc flow */
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+/* moved this lower to match HTML doc flow */
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+/* changed this selector to refer to the new aside element 
+moved this code down to match HTML doc flow*/
 aside {
   margin-right: 20px;
   padding: 20px;
@@ -105,22 +123,32 @@ aside {
   background-color: #2589bd;
 }
 
+/* changed this selector to refer to the new aside-items class.
+Deleted duplicate code
+moved this code down to match HTML doc flow*/
 .aside-items {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
+/* changed this selector to refer to the new main-items class.
+Deleted duplicate code
+moved this code down to match HTML doc flow*/
 .aside-items h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
+/* changed this selector to refer to the new main-items class.
+Deleted duplicate code
+moved this code down to match HTML doc flow*/
 .aside-items img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
+/* changed this selector to refer to the new footer element */
 footer {
   padding: 30px;
   clear: both;
@@ -128,7 +156,7 @@ footer {
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
-
-footer h2 {
+/* changed this selector to refer to the new footer and h4 elements */
+footer h4 {
   font-size: 20px;
 }

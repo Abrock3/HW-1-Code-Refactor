@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Horiseon</title>
+    <!-- added a descriptive title to the page -->
+    <title>Horiseon Digital Marketing</title>
   </head>
   <body>
+    <!-- Modified the following div to a header to describe its contents
+      Deleted the header class attribute -->
     <header>
-      <h1>Hori<span class="seo">seo</span>n</h1>
+      <h1>Hori<span id="seo">seo</span>n</h1>
+
+      <!-- modified the following div to a nav element to describe its contents-->
       <nav>
         <ul>
           <li>
@@ -24,9 +29,16 @@
         </ul>
       </nav>
     </header>
-    <section class="hero"></section>
+    <!-- changed this div to a figure element to describe its contents -->
+    <figure class="hero"></figure>
+    <!-- changed this div to a main element to describe its contents
+    Deleted the "content" class, as it's now unecessary -->
     <main>
-      <section class="main-items">
+      <!-- changed the divs within main to sections to describe their contents. 
+      I also changed the search-engine-optimization class to an id to match the link in the nav bar 
+    Added a class that refers to all sections within the main element-->
+      <section id="search-engine-optimization" class="main-items">
+        <!-- added a descriptive alt attribute to this img -->
         <img
           src="./assets/images/search-engine-optimization.jpg"
           class="float-left"
@@ -39,8 +51,10 @@
           home. Search Engine Optimization (SEO) allows you to increase your
           visibility and find the right customers for your business.
         </p>
+        <!-- div changed to section -->
       </section>
-      <section class="main-items">
+      <section id="online-reputation-management" class="main-items">
+        <!-- added a descriptive alt attribute to this img -->
         <img
           src="./assets/images/online-reputation-management.jpg"
           class="float-right"
@@ -55,7 +69,9 @@
           business.
         </p>
       </section>
-      <section class="main-items">
+      <!-- div changed to section -->
+      <section id="social-media-marketing" class="main-items">
+        <!-- added a descriptive alt attribute to this img -->
         <img
           src="./assets/images/social-media-marketing.jpg"
           class="float-left"
@@ -70,25 +86,35 @@
         </p>
       </section>
     </main>
+    <!-- changed this div to an aside to describe its placement and contents 
+    Deleted the "benefits" class as it's no longer necessary-->
     <aside>
+      <!-- div changed to section 
+      added a class that applies to all sections within the aside element
+    deleted the classes that were formerly applying to each section, as they've been replaced with a single class-->
       <section class="aside-items">
         <h3>Lead Generation</h3>
+        <!-- added null alt attribute to make screen readers skip it, as it's just a decorative image -->
         <img src="./assets/images/lead-generation.png" alt="" />
         <p>
           Inbound strategies for lead generation require less work for your
           business, bringing customers directly to your website.
         </p>
       </section>
+      <!-- div changed to section -->
       <section class="aside-items">
         <h3>Brand Awareness</h3>
+        <!-- added null alt attribute to make screen readers skip it, as it's just a decorative image -->
         <img src="./assets/images/brand-awareness.png" alt="" />
         <p>
           Users find your business through paid and organic searches, increasing
           the search ranking and visibility for your business.
         </p>
       </section>
+      <!-- div changed to section -->
       <section class="aside-items">
         <h3>Cost Management</h3>
+        <!-- added null alt attribute to make screen readers skip it, as it's just a decorative image -->
         <img src="./assets/images/cost-management.png" alt="" />
         <p>
           As the search ranking for your business increases, your advertising
@@ -96,8 +122,10 @@
         </p>
       </section>
     </aside>
+    <!-- div changed to footer to describe its placement and contents -->
     <footer>
-      <h2>Made with ❤️️ by Horiseon</h2>
+      <!-- changed to an h4 element to match document flow -->
+      <h4>Made with ❤️️ by Horiseon</h4>
       <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
     </footer>
   </body>
